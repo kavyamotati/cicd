@@ -31,7 +31,26 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				</configuration>
+				<cloudHubDeployment>
+				<muleVersion>${app .runtime}</muleVersion>
+				<username>kavyaEnique3</username>
+				<password>Kavya@1995</password>
+				<environment>Sandbox</environment>
+					<workerType>Micro</workerType>
+					<workers>l</workers>
+					<uri>https://anypoint.mulesoft.com</uri>
+					<applicationName>app-cicd</applicationName>
+					</cloudHubDeployment>
+					</configuration>
+					<executions>
+					<execution>
+					<id>deploy</id>  	
+					<phase>deploy</phase>
+					<goals>
+					<goal>deploy</goal>
+					</goals>
+					</execution>
+					</executions>
 			</plugin>
 		</plugins>
 	</build>
