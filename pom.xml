@@ -32,7 +32,7 @@
 				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
-				<muleVersion>${app .runtime}</muleVersion>
+				<muleVersion>${app.runtime}</muleVersion>
 				<username>kavyaEnique3</username>
 				<password>Kavya@1995</password>
 				<environment>Sandbox</environment>
