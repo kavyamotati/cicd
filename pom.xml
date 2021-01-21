@@ -35,10 +35,11 @@
 				<muleVersion>4.3.0</muleVersion>
 				<username>kavyaEnique3</username>
 				<password>Kavya@1995</password>
+				<uri>https://anypoint.mulesoft.com</uri>
 				<environment>Sandbox</environment>
 				<workerType>Micro</workerType>
 				<workers>l</workers>
-				<uri>https://anypoint.mulesoft.com</uri>
+				
 				<applicationName>app-cicd</applicationName>
 				</cloudHubDeployment>
 					</configuration>
