@@ -19,6 +19,7 @@
 	</properties>
 
 	<build>
+		<defaultGoal>deploy</defaultGoal>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -38,8 +39,6 @@
 				<uri>https://anypoint.mulesoft.com</uri>
 				<environment>Sandbox</environment>
 				<workerType>Micro</workerType>
-				
-				
 				<applicationName>app-cicd</applicationName>
 				</cloudHubDeployment>
 					</configuration>
