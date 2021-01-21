@@ -38,7 +38,7 @@
 				<uri>https://anypoint.mulesoft.com</uri>
 				<environment>Sandbox</environment>
 				<workerType>Micro</workerType>
-				<workers>l</workers>
+				
 				
 				<applicationName>app-cicd</applicationName>
 				</cloudHubDeployment>
