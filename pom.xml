@@ -43,6 +43,7 @@
 				</cloudHubDeployment>
 					</configuration>
 					<executions>
+					
                <execution>
                   <id>deploy</id>
                   <phase>deploy</phase>
@@ -95,5 +96,16 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+    
+    <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>corp1</id>
+      <name>Corporate Repository</name>
+      <url>scp://repo/maven2</url>
+      <layout>default</layout>
+    </repository>
+</distributionManagement>
+    
 
 </project>
