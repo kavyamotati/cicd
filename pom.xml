@@ -44,6 +44,7 @@
 				<environment>Sandbox</environment>
 				<workerType>Micro</workerType>
 				<applicationName>app-cicd</applicationName>
+				<build><defaultGoal>compile</defaultGoal></build>
 				</cloudHubDeployment>
 					</configuration>
 					<executions>
