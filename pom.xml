@@ -13,23 +13,18 @@
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
 		<app.runtime>4.3.0</app.runtime>
 		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
 	</properties>
-
 	<build>
-		
 		<plugins>
 			<plugin>
-				
-  <groupId>org.apache.maven.plugins</groupId>
+<groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-deploy-plugin</artifactId>
   <configuration>
     <skip>true</skip>
   </configuration>
 </plugin>
-	
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
@@ -47,8 +42,7 @@
 				<build><defaultGoal>compile</defaultGoal></build>
 				</cloudHubDeployment>
 					</configuration>
-					<executions>
-					
+					<executions>				
                <execution>
                   <id>deploy</id>
                   <phase>deploy</phase>
@@ -60,7 +54,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
 	<dependencies>
         <dependency>
             <groupId>org.mule.connectors</groupId>
@@ -75,7 +68,6 @@
             <classifier>mule-plugin</classifier>
         </dependency>
 	</dependencies>
-
 	<repositories>
           <repository>
             <id>anypoint-exchange-v2</id>
@@ -100,26 +92,14 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
-    </pluginRepositories>
-    
-    <distributionManagement>
-    
+    </pluginRepositories>   
+    <distributionManagement>    
     <repository>
-
 <uniqueVersion>false</uniqueVersion>
-
 <id>mycloudhub</id>
-
 <name>Cloud Hub</name>
-
 <url>https://anypoint.mulesoft.com/cloudhub/</url>
-
 <layout>default</layout>
-
-</repository>
-
-    
+</repository>   
 </distributionManagement>
-    
-
 </project>
