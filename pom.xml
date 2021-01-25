@@ -31,26 +31,21 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				<cloudHubDeployment>
-				<muleVersion>4.3.0</muleVersion>
-				<username>kavyaEnique3</username>
-				<password>Kavya@1995</password>
-				<uri>https://anypoint.mulesoft.com</uri>
-				<environment>Sandbox</environment>
-				<workerType>Micro</workerType>
-				<applicationName>app-cicd</applicationName>
-				<build><defaultGoal>compile</defaultGoal></build>
-				</cloudHubDeployment>
-					</configuration>
-					<executions>				
-               <execution>
-                  <id>deploy</id>
-                  <phase>deploy</phase>
-                  <goals>
-                     <goal>deploy</goal>
-                  </goals>
-               </execution>
-            </executions>
+    <cloudHubDeployment>
+      <uri>https://anypoint.mulesoft.com</uri>
+      <muleVersion>4.3.0</muleVersion>
+      <username>kavyaEnique3</username>
+      <password>Kavya@1995</password>
+      <applicationName>cicdproject</applicationName>
+      <environment>Sandbox</environment>      
+      <workers>1</workers>
+      <workerType>Micro</workerType>
+      <objectStoreV2>true</objectStoreV2>
+      <properties>
+        <key>value</key>
+      </properties>
+    </cloudHubDeployment>
+  </configuration>
 			</plugin>
 		</plugins>
 	</build>
