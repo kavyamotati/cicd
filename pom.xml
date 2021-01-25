@@ -38,9 +38,7 @@
       <password>Kavya@1995</password>
       <applicationName>cicdproject</applicationName>
       <environment>Sandbox</environment>      
-      <workers>1</workers>
-      <workerType>Micro</workerType>
-      <objectStoreV2>true</objectStoreV2>
+     <server>Hybrid</server>
       <properties>
         <key>value</key>
       </properties>
