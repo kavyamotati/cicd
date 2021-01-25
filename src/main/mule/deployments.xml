@@ -12,6 +12,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<logger level="INFO" doc:name="Logger" doc:id="32d875d0-5d23-430d-8a03-240dbf83cee6" message='#["Deployments flow Started"]'/>
 		<logger level="INFO" doc:name="Logger" doc:id="4c8e5036-e0ab-4550-9407-80311819b771" message='#["CICD logger"]'/>
 		<set-payload value="cicd sample project" doc:name="Set Payload" doc:id="742a90a2-d731-45fc-bc41-422d7fd5f255" />
+		<logger level="INFO" doc:name="Logger" doc:id="562e0c09-3147-4b3d-a6eb-29034b8e8f97" message="changed"/>
 		<logger level="INFO" doc:name="Logger" doc:id="a441c0d8-a89e-4dac-9be5-1fc0dcc9fa24" message='#["Deployments flow ended"]'/>
 	</flow>
 </mule>
