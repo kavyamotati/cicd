@@ -10,6 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="deploymentsFlow" doc:id="ed0478aa-483b-4506-93a5-347db7905e1d" >
 		<http:listener doc:name="Listener" doc:id="35b76e7d-9972-4b5f-840c-72e414494de0" config-ref="HTTP_Listener_config" path="/deploy"/>
 		<logger level="INFO" doc:name="Logger" doc:id="32d875d0-5d23-430d-8a03-240dbf83cee6" message='#["Deployments flow Started"]'/>
+		<logger level="INFO" doc:name="Logger" doc:id="df69a7d7-be9b-40c1-992c-55f788da0ab5" message="cicd project"/>
 		<set-payload value="cicd sample project" doc:name="Set Payload" doc:id="742a90a2-d731-45fc-bc41-422d7fd5f255" />
 		<logger level="INFO" doc:name="Logger" doc:id="a441c0d8-a89e-4dac-9be5-1fc0dcc9fa24" message='#["Deployments flow ended"]'/>
 	</flow>
